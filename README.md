@@ -28,7 +28,7 @@ This project provides a comprehensive analysis of restaurant data, offering valu
 - **Market Analysis:** Provides valuable insights for businesses looking to expand into new cities or identify popular restaurant trends.
 - **Consumer Choice:** Helps consumers discover highly-rated restaurants and popular chains.
 - **Health Awareness:** Raises awareness about the availability of restaurants in different health categories.
-- 
+
 **Usage:**
 
 1. **Prerequisites:** Install R-Studio and libraries: dplyr and ggplot2.
