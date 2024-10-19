@@ -30,7 +30,7 @@ specific restaurant chains.
 5.      
 
 6.  **Read the data:** Code
-    snippet `restaurant_data <- read.csv("/Users/rudrakshgupta/Desktop/swiggy.csv")`
+    snippet `restaurant_data <- read.csv("swiggy.csv")`
 
 7.      
 
@@ -58,9 +58,6 @@ specific restaurant chains.
 - You may need to modify the file path if your data is located
   elsewhere.
 
-- The code assumes that the \"Health_Category\" column exists in your
-  dataset. If it doesn\'t, you\'ll need to remove the related sections
-  or provide the correct column name.  
   **Contributing:**  
   Contributions are welcome! Please feel free to fork this repository,
   make changes, and submit a pull request.
