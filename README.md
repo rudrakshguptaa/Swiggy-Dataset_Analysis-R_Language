@@ -1,6 +1,6 @@
   
-Project Title: Restaurant Data Analysis  
-Description:  
+**Project Title: Restaurant Data Analysis  **
+**Description:  **
 This project analyzes a dataset containing information about
 restaurants. It provides insights into the distribution of restaurants
 across different cities, top-rated restaurants, and the popularity of
