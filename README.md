@@ -1,15 +1,13 @@
-  
-**Project Title: Restaurant Data Analysis  **
-**Description:  **
+Project Title: Restaurant Data Analysis  
+
+Description:
 This project analyzes a dataset containing information about
 restaurants. It provides insights into the distribution of restaurants
 across different cities, top-rated restaurants, and the popularity of
 specific restaurant chains.  
 **Data:**
 
-- The dataset used for this analysis is named \"swiggy.csv\" and is
-  assumed to be located in the \"/Users/rudrakshgupta/Desktop\"
-  directory. You may need to adjust the file path to match your own
+- The dataset used for this analysis is named \"swiggy.csv\". You need to adjust the file path to match your own
   location.  
   **Libraries:**
 
