@@ -4,24 +4,23 @@ library(ggplot2)
 
 restaurant_data <- read.csv("swiggy.csv") #Import CSV File
 
-# Top 10 cities with most restaurants
-top_10_cities <- restaurant_data %>%
+# Top 15 cities with most restaurants
+top_15_cities <- restaurant_data %>%
   group_by(city) %>%
   summarize(Count = n()) %>%
   arrange(desc(Count)) %>%
-  head(10)
+  head(15)
 
-# top 10 cities
-cat("Top 10 Cities with the Highest Number of Restaurants Listed:\n")
-print(top_10_cities)
+# top 15 cities
+cat("Top 15 Cities with the Highest Number of Restaurants Listed:\n")
+print(top_15_cities)
 
 # Bar plot
-ggplot(top_10_cities, aes(x = reorder(city, -Count), y = Count)) +
+ggplot(top_15_cities, aes(x = reorder(city, -Count), y = Count)) +
   geom_bar(stat = "identity", fill = "skyblue") +
   labs(
-    title = "Top 10 Cities with the Highest Number of Restaurants Listed",x = "City", y = "Number of Restaurants" ) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    title = "Top 15 Cities with the Highest Number of Restaurants Listed",x = "City", y = "Number of Restaurants" ) +
+  theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 # Check the data type of the rating column
 str(restaurant_data$rating)
@@ -52,11 +51,8 @@ data <- restaurant_data %>%
   arrange(desc(count))
 
 # Bar plot for specific restaurant counts
-ggplot(data, aes(x = reorder(name, -count), y = count, fill = name)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = count), hjust = -0.3, vjust = 0.3, size = 6) +
+ggplot(data, aes(x = reorder(name, -count), y = count, fill = name)) + geom_bar(stat = "identity") +
+  geom_text(aes(label = count), hjust = 0.4, vjust = -0.3, size = 3) +
   labs(
     title = "Number of Branches of KFC, McDonald's, Domino's, and Subway", x = "Restaurant", y = "Number of Branches"
-  ) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  ) + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
